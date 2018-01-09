@@ -35,3 +35,15 @@ Download the run_analysis.R and sourced it in your current working working direc
 getTidy()
 ~~~~
 It will generate the tidydata.txt file that contains the average of each variable for each activity and each subject. Runtime may vary depending on the Internet Download Speed and/or Computer Specifications.
+
+## Process
+The **run_analysis.R** script performs the following on the *UCI HAR Dataset*:
+1. Download and Unzip the files if not present in the current working directory
+2. Combines, row-wise, the X, y, and subject files found in test and train folder into their respective data frames, **xJoinedDataFrame**, **yJoinedDataFrame**, and **subjectDataFrame**.
+3. Cleans up the Measurement Variable (**featuresDataFrame**) names found in ***features.txt*** file by lowering the case of the characters then removing the parenthesis '()' characters and replacing the comma ',' and dash '-' characters with underscore '_' character. The result is a human friendly variable names.
+4. Changing the Variable (Column) Names of the combined X Data Frame (**xJoinedDataFrame**) with the cleaned measurement variable names
+5. Combines, column-wise, the three, **subjectDataFrame-yJoinedDataFrame-xJoinedDataFrame**, data frames in a single data frame, **xDataFrame**
+6. Subsets the **xDataFrame** data frame to the extract the columns that contains the mean and standard deviation of each measurement.
+7. Apply the Activity labels found in the ***actvity_labels.txt*** to the **xDataFrame$activity** columns
+8. Calculate the Average of the Measurements Mean and Standard Deviation per Subject per Activity and stores it as **cleanData** data frame.
+9. Dumps into the current working directory the **cleanData** data frame into a text file, **tidydata.txt**, as the independent tidy data set.

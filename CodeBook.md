@@ -74,6 +74,63 @@ This is a tidied data of the UCI HAR Dataset (https://d396qusza40orc.cloudfront.
 ~~~~
 More information on the details of the variables can be found in ***\UCI HAR Dataset\features_info.txt***. 
 
+### subject
+The subject who performed the activities
+
+### activity
+A set of activities that the subject performs such as WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING
+
+### tbodyacc
+Time domain body acceleration with 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tgravityacc
+Time domain gravity acceleration with 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tbodyaccjerk
+Time domain body acceleration jerk with 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tbodygyro
+Time domain body angular velocity with 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tbodygyrojerk
+Time domain body angular velocity jerk with 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tbodyaccmag
+Time domain body acceleration magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tgravityaccmag
+Time domain gravity acceleration magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tbodyaccjerkmag
+Time domain body acceleration jerk magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tbodygyromag
+Time domain body angular velocity magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### tbodygyrojerkmag
+Time domain body angular velocity jerk magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### fbodyacc
+Frequency domain body acceleration of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### fbodyaccjerk
+Frequency domain body acceleration jerk of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### fbodygyro
+Frequency domain body angular velocity of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### fbodyaccmag
+Frequency domain body acceleration magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### fbodybodyaccjerkmag
+Frequency domain body acceleration jerk magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### fbodybodygyromag
+Frequency domain body angular velocity magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
+### fbodybodygyrojerkmag
+Frequency domain body angular velocity jerk magnitude of the 3-axial raw signals, X-Y-Z. The mean and standard deviation (std) were collected.
+
 ## Process
 The **run_analysis.R** script performs the following on the *UCI HAR Dataset*:
 1. Download and Unzip the files if not present in the current working directory

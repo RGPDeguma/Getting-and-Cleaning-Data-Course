@@ -88,6 +88,6 @@ getTidy <- function() {
   names(cleanData)[2] <- "activity"
   
   tData <- "tidydata.txt"
-  write.table(cleanData, file = tData, row.names = TRUE)
+  write.table(cleanData, file = tData, row.names = FALSE)
   
 }
